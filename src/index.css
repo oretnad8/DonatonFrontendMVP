@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Resets mínimos — todos los estilos reales están en src/styles/app.css */
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+button { cursor: pointer; }
