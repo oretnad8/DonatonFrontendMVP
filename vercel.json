@@ -1,28 +1,20 @@
 {
   "rewrites": [
-    {
-      "source": "/api/auth/:match*",
-      "destination": "https://msvc1.localfoto.cl/api/auth/:match*"
-    },
-    {
-      "source": "/api/usuarios/:match*",
-      "destination": "https://msvc2.localfoto.cl/api/usuarios/:match*"
-    },
-    {
-      "source": "/necesidades/:match*",
-      "destination": "https://msvc3.localfoto.cl/necesidades/:match*"
-    },
-    {
-      "source": "/stock/:match*",
-      "destination": "https://msvc4.localfoto.cl/stock/:match*"
-    },
-    {
-      "source": "/api/match/:match*",
-      "destination": "https://msvc0.localfoto.cl/api/match/:match*"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/api/auth", "destination": "https://msvc1.localfoto.cl/api/auth" },
+    { "source": "/api/auth/:path+", "destination": "https://msvc1.localfoto.cl/api/auth/:path+" },
+
+    { "source": "/api/usuarios", "destination": "https://msvc2.localfoto.cl/api/usuarios" },
+    { "source": "/api/usuarios/:path+", "destination": "https://msvc2.localfoto.cl/api/usuarios/:path+" },
+
+    { "source": "/necesidades", "destination": "https://msvc3.localfoto.cl/necesidades" },
+    { "source": "/necesidades/:path+", "destination": "https://msvc3.localfoto.cl/necesidades/:path+" },
+
+    { "source": "/stock", "destination": "https://msvc4.localfoto.cl/stock" },
+    { "source": "/stock/:path+", "destination": "https://msvc4.localfoto.cl/stock/:path+" },
+
+    { "source": "/api/match", "destination": "https://msvc0.localfoto.cl/api/match" },
+    { "source": "/api/match/:path+", "destination": "https://msvc0.localfoto.cl/api/match/:path+" },
+
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
