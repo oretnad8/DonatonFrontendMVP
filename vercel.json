@@ -1,0 +1,28 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/auth/:match*",
+      "destination": "https://msvc1.localfoto.cl/api/auth/:match*"
+    },
+    {
+      "source": "/api/usuarios/:match*",
+      "destination": "https://msvc2.localfoto.cl/api/usuarios/:match*"
+    },
+    {
+      "source": "/necesidades/:match*",
+      "destination": "https://msvc3.localfoto.cl/necesidades/:match*"
+    },
+    {
+      "source": "/stock/:match*",
+      "destination": "https://msvc4.localfoto.cl/stock/:match*"
+    },
+    {
+      "source": "/api/match/:match*",
+      "destination": "https://msvc0.localfoto.cl/api/match/:match*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
